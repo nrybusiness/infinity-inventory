@@ -26,6 +26,8 @@ function instalarSistema() {
   _crearHojaSiNoExiste(ss, HOJAS.STOCK, HEADERS.STOCK);
   _crearHojaSiNoExiste(ss, HOJAS.MOVIMIENTOS, HEADERS.MOVIMIENTOS);
   _crearHojaSiNoExiste(ss, HOJAS.CONFIG, HEADERS.CONFIG);
+  _crearHojaSiNoExiste(ss, HOJAS.COMBOS, HEADERS.COMBOS);
+  _crearHojaSiNoExiste(ss, HOJAS.COMBO_ITEMS, HEADERS.COMBO_ITEMS);
 
   _seedVendedoras();
   _seedConfig();

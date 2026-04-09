@@ -81,6 +81,30 @@ Definición exacta de columnas para cada hoja del backend. Esta es la referencia
 
 ---
 
+## Hoja: `Combos`
+
+Paquetes predefinidos de productos con precio conjunto especial (ej. *"Conjunto jogger / Leggings $113.000"*).
+
+| Col | Nombre | Tipo | Ejemplo |
+|---|---|---|---|
+| A | combo_id | TEXT | `C001` |
+| B | nombre | TEXT | `Conjunto jogger / Leggings` |
+| C | precio | NUMBER | `113000` |
+| D | activo | BOOL | `TRUE` |
+
+---
+
+## Hoja: `ComboItems`
+
+Tabla de unión (many-to-many) entre combos y variantes. Indica qué SKUs componen cada combo.
+
+| Col | Nombre | Tipo | Ejemplo |
+|---|---|---|---|
+| A | combo_id | TEXT | `C001` |
+| B | sku | TEXT | `P001-SM` |
+
+---
+
 ## Inicialización
 
-La función `instalarSistema()` (en `Core/Installer.gs`) crea automáticamente las 6 hojas con sus headers correctos y carga los datos seed (vendedoras, config). No es necesario crear las hojas manualmente.
+La función `instalarSistema()` (en `Core/Installer.gs`) crea automáticamente las 8 hojas con sus headers correctos y carga los datos seed (vendedoras, config). No es necesario crear las hojas manualmente.

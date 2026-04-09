@@ -38,7 +38,7 @@ En el editor de Apps Script vas a recrear la estructura de carpetas. Apps Script
 no soporta carpetas reales pero permite usar `/` en el nombre de archivo para
 simularlas visualmente.
 
-### 3.1 Crear los archivos `.gs` (24 archivos)
+### 3.1 Crear los archivos `.gs` (26 archivos)
 
 Para cada archivo de la siguiente lista:
 
@@ -60,6 +60,8 @@ Data/VendedorasDAO
 Data/StockDAO
 Data/MovimientosDAO
 Data/ConfigDAO
+Data/CombosDAO
+Data/ComboItemsDAO
 
 Logic/VentasService
 Logic/EntregasService
@@ -134,7 +136,7 @@ Guarda con `Ctrl+S` (o `Cmd+S`).
    - Click en "Configuración avanzada" → "Ir a [nombre del proyecto] (no seguro)"
    - "Permitir"
 4. Verifica en `Ver → Registros` (o el icono de logs) que diga `✓ Instalación completada`.
-5. Vuelve al Sheet → deberías ver 6 hojas creadas: `Productos`, `Variantes`, `Vendedoras`, `Stock`, `Movimientos`, `Config`.
+5. Vuelve al Sheet → deberías ver 8 hojas creadas: `Productos`, `Variantes`, `Vendedoras`, `Stock`, `Movimientos`, `Config`, `Combos`, `ComboItems`.
 
 ---
 

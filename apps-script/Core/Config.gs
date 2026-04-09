@@ -47,6 +47,8 @@ const HOJAS = {
   STOCK: 'Stock',
   MOVIMIENTOS: 'Movimientos',
   CONFIG: 'Config',
+  COMBOS: 'Combos',
+  COMBO_ITEMS: 'ComboItems',
 };
 
 /**
@@ -97,6 +99,16 @@ const COLS = {
     valor: 1,
     descripcion: 2,
   },
+  COMBOS: {
+    combo_id: 0,
+    nombre: 1,
+    precio: 2,
+    activo: 3,
+  },
+  COMBO_ITEMS: {
+    combo_id: 0,
+    sku: 1,
+  },
 };
 
 /**
@@ -110,6 +122,8 @@ const HEADERS = {
   STOCK: ['sku', 'vendedora_id', 'cantidad'],
   MOVIMIENTOS: ['mov_id', 'fecha', 'tipo', 'sku', 'cantidad', 'vendedora_id', 'destino_id', 'notas', 'usuario_email'],
   CONFIG: ['clave', 'valor', 'descripcion'],
+  COMBOS: ['combo_id', 'nombre', 'precio', 'activo'],
+  COMBO_ITEMS: ['combo_id', 'sku'],
 };
 
 /**
