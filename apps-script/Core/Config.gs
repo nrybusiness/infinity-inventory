@@ -11,7 +11,7 @@
 
 const CONFIG = {
   // ID del Google Sheet que actúa como base de datos
-  SHEET_ID: 'PEGAR_AQUI_EL_ID_DEL_SHEET',
+  SHEET_ID: '1K4SsxPyzav8T0AMYD_XvcT6aiWuejEJNdCo5fT1ehlU',
 
   // Zona horaria por defecto
   TIMEZONE: 'America/Bogota',
