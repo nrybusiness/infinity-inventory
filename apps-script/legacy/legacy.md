@@ -1,0 +1,1 @@
+archivos residuales o memorias
